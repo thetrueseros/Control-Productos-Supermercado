@@ -15,6 +15,8 @@ namespace Control_Productos_Supermercado
         public Form1()
         {
             InitializeComponent();
+            LimpiarCampos();
+            ActualizarListaProductos();
         }
 
 
@@ -94,6 +96,22 @@ namespace Control_Productos_Supermercado
                 dtpFechaVence.Value,
                 double.Parse(txtbPrecioBase.Text)
             );
+        }
+        private void LimpiarCampos()
+        {
+            cmbTipoProducto.SelectedIndex = 0;
+            txtbCategoría.Clear();
+            txtbNombreProd.Clear();
+            txtbPrecioBase.Clear();
+            dtpFechaVence.CustomFormat = null;
+        }
+        public void ActualizarListaProductos()
+        {
+            lstProductos.Items.Clear();
+            foreach (string linea in ProductoRepository.Instancia.ObtenerListaProductos())
+            {
+                lstProductos.Items.Add(linea);
+            }
         }
     }
 }
