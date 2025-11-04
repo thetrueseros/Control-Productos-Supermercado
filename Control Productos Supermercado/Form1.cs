@@ -87,6 +87,13 @@ namespace Control_Productos_Supermercado
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            Producto producto = ProductoFactory.CrearProducto(
+                cmbTipoProducto.Text,
+                txtbCategoría.Text,
+                txtbNombreProd.Text,
+                dtpFechaVence.Value,
+                double.Parse(txtbPrecioBase.Text)
+            );
         }
     }
 }

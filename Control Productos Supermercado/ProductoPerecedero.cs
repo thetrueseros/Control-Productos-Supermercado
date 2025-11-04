@@ -8,7 +8,7 @@ namespace Control_Productos_Supermercado
 {
     public class ProductoPerecedero : Producto
     {
-        ProductoPerecedero(string marca, string producto, DateTime fechaVencimiento, double precioBase) : base(marca, producto, fechaVencimiento, precioBase)
+        public ProductoPerecedero(string marca, string producto, DateTime fechaVencimiento, double precioBase) : base(marca, producto, fechaVencimiento, precioBase)
         {
         }
         public override double CalcularPrecioFinal(double precioBase, DateTime fechaVencimiento)
