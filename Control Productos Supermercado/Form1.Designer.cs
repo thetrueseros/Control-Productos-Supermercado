@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lstVehiculos = new System.Windows.Forms.ListBox();
-            this.btnAgregarVehiculo = new System.Windows.Forms.Button();
+            this.lstProductos = new System.Windows.Forms.ListBox();
+            this.btnAgregarProducto = new System.Windows.Forms.Button();
             this.txtbPrecioBase = new System.Windows.Forms.TextBox();
             this.txtbProducto = new System.Windows.Forms.TextBox();
             this.lblPrecioBase = new System.Windows.Forms.Label();
@@ -41,29 +41,29 @@
             this.txtbMarca = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // lstVehiculos
+            // lstProductos
             // 
-            this.lstVehiculos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lstProductos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lstVehiculos.FormattingEnabled = true;
-            this.lstVehiculos.Location = new System.Drawing.Point(427, 145);
-            this.lstVehiculos.MinimumSize = new System.Drawing.Size(405, 173);
-            this.lstVehiculos.Name = "lstVehiculos";
-            this.lstVehiculos.Size = new System.Drawing.Size(422, 173);
-            this.lstVehiculos.TabIndex = 22;
+            this.lstProductos.FormattingEnabled = true;
+            this.lstProductos.Location = new System.Drawing.Point(427, 145);
+            this.lstProductos.MinimumSize = new System.Drawing.Size(405, 173);
+            this.lstProductos.Name = "lstProductos";
+            this.lstProductos.Size = new System.Drawing.Size(422, 173);
+            this.lstProductos.TabIndex = 22;
             // 
-            // btnAgregarVehiculo
+            // btnAgregarProducto
             // 
-            this.btnAgregarVehiculo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnAgregarProducto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAgregarVehiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarVehiculo.Location = new System.Drawing.Point(314, 347);
-            this.btnAgregarVehiculo.Name = "btnAgregarVehiculo";
-            this.btnAgregarVehiculo.Size = new System.Drawing.Size(230, 40);
-            this.btnAgregarVehiculo.TabIndex = 21;
-            this.btnAgregarVehiculo.Text = "Agregar Vehículo";
-            this.btnAgregarVehiculo.UseVisualStyleBackColor = true;
+            this.btnAgregarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarProducto.Location = new System.Drawing.Point(314, 347);
+            this.btnAgregarProducto.Name = "btnAgregarProducto";
+            this.btnAgregarProducto.Size = new System.Drawing.Size(230, 40);
+            this.btnAgregarProducto.TabIndex = 21;
+            this.btnAgregarProducto.Text = "Agregar Producto";
+            this.btnAgregarProducto.UseVisualStyleBackColor = true;
             // 
             // txtbPrecioBase
             // 
@@ -173,8 +173,8 @@
             this.ClientSize = new System.Drawing.Size(861, 399);
             this.Controls.Add(this.txtbMarca);
             this.Controls.Add(this.dtpFechaVence);
-            this.Controls.Add(this.lstVehiculos);
-            this.Controls.Add(this.btnAgregarVehiculo);
+            this.Controls.Add(this.lstProductos);
+            this.Controls.Add(this.btnAgregarProducto);
             this.Controls.Add(this.txtbPrecioBase);
             this.Controls.Add(this.txtbProducto);
             this.Controls.Add(this.lblPrecioBase);
@@ -192,8 +192,8 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox lstVehiculos;
-        private System.Windows.Forms.Button btnAgregarVehiculo;
+        private System.Windows.Forms.ListBox lstProductos;
+        private System.Windows.Forms.Button btnAgregarProducto;
         private System.Windows.Forms.TextBox txtbPrecioBase;
         private System.Windows.Forms.TextBox txtbProducto;
         private System.Windows.Forms.Label lblPrecioBase;
