@@ -4,4 +4,4 @@ Daniel Yepes Molina - Miguel Ángel Zapata Vargas
 
 ## Aplicación funcionando
 
-![alt text](images\image.png)
+![alt text](images/image.png)
