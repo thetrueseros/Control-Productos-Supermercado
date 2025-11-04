@@ -10,11 +10,13 @@ namespace Control_Productos_Supermercado
     {
         public string marca { get; set; }
         public string producto { get; set; }
+        public DateTime fechaVencimiento { get; set; }
         public double precioBase { get; set; }
-        public Producto(string marca, string producto, double precioBase)
+        public Producto(string marca, string producto, DateTime fechaVencimiento, double precioBase)
         {
             this.marca = marca;
             this.producto = producto;
+            this.fechaVencimiento = fechaVencimiento;
             this.precioBase = precioBase;
         }
         public abstract double CalcularPrecioFinal(double precioBase);
