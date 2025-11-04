@@ -11,7 +11,7 @@ namespace Control_Productos_Supermercado
         ProductoPerecedero(string marca, string producto, DateTime fechaVencimiento, double precioBase) : base(marca, producto, fechaVencimiento, precioBase)
         {
         }
-        public override double CalcularPrecioFinal(double precioBase)
+        public override double CalcularPrecioFinal(double precioBase, DateTime fechaVencimiento)
         {
             if (fechaVencimiento <= DateTime.Now.AddDays(5))
             {

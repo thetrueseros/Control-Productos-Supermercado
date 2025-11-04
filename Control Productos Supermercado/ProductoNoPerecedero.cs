@@ -11,7 +11,7 @@ namespace Control_Productos_Supermercado
         public ProductoNoPerecedero(string marca, string producto, DateTime fechaVencimiento, double precioBase) : base(marca, producto, fechaVencimiento, precioBase)
         {
         }
-        public override double CalcularPrecioFinal(double precioBase)
+        public override double CalcularPrecioFinal(double precioBase, DateTime fechaVencimiento)
         {
             if (precioBase > 100000)
             {

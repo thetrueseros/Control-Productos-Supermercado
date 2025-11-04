@@ -19,6 +19,6 @@ namespace Control_Productos_Supermercado
             this.fechaVencimiento = fechaVencimiento;
             this.precioBase = precioBase;
         }
-        public abstract double CalcularPrecioFinal(double precioBase);
+        public abstract double CalcularPrecioFinal(double precioBase, DateTime fechaVencimiento);
     }
 }
