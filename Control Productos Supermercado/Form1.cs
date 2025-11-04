@@ -96,6 +96,11 @@ namespace Control_Productos_Supermercado
                 dtpFechaVence.Value,
                 double.Parse(txtbPrecioBase.Text)
             );
+            ProductoRepository.Instancia.Agregar(producto);
+            lstProductos.Items.Clear();
+            ActualizarListaProductos();
+            LimpiarCampos();
+            MessageBox.Show("Producto agregado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         private void LimpiarCampos()
         {
