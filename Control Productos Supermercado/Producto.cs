@@ -8,14 +8,14 @@ namespace Control_Productos_Supermercado
 {
     public abstract class Producto
     {
-        public string marca { get; set; }
-        public string producto { get; set; }
+        public string categoria { get; set; }
+        public string nombre { get; set; }
         public DateTime fechaVencimiento { get; set; }
         public double precioBase { get; set; }
         public Producto(string marca, string producto, DateTime fechaVencimiento, double precioBase)
         {
-            this.marca = marca;
-            this.producto = producto;
+            this.categoria = marca;
+            this.nombre = producto;
             this.fechaVencimiento = fechaVencimiento;
             this.precioBase = precioBase;
         }
