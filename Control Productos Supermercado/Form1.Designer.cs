@@ -31,14 +31,14 @@
             this.lstProductos = new System.Windows.Forms.ListBox();
             this.btnAgregarProducto = new System.Windows.Forms.Button();
             this.txtbPrecioBase = new System.Windows.Forms.TextBox();
-            this.txtbProducto = new System.Windows.Forms.TextBox();
+            this.txtbNombreProd = new System.Windows.Forms.TextBox();
             this.lblPrecioBase = new System.Windows.Forms.Label();
             this.lblProducto = new System.Windows.Forms.Label();
-            this.lblMarca = new System.Windows.Forms.Label();
+            this.lblCategoría = new System.Windows.Forms.Label();
             this.lblFechaVencimiento = new System.Windows.Forms.Label();
             this.lblSisContProdSuper = new System.Windows.Forms.Label();
             this.dtpFechaVence = new System.Windows.Forms.DateTimePicker();
-            this.txtbMarca = new System.Windows.Forms.TextBox();
+            this.txtbCategoría = new System.Windows.Forms.TextBox();
             this.lblTipoProducto = new System.Windows.Forms.Label();
             this.cmbTipoProducto = new System.Windows.Forms.ComboBox();
             this.lblObligatorio = new System.Windows.Forms.Label();
@@ -78,14 +78,14 @@
             this.txtbPrecioBase.Size = new System.Drawing.Size(207, 20);
             this.txtbPrecioBase.TabIndex = 20;
             // 
-            // txtbProducto
+            // txtbNombreProd
             // 
-            this.txtbProducto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtbNombreProd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtbProducto.Location = new System.Drawing.Point(214, 206);
-            this.txtbProducto.Name = "txtbProducto";
-            this.txtbProducto.Size = new System.Drawing.Size(207, 20);
-            this.txtbProducto.TabIndex = 18;
+            this.txtbNombreProd.Location = new System.Drawing.Point(214, 206);
+            this.txtbNombreProd.Name = "txtbNombreProd";
+            this.txtbNombreProd.Size = new System.Drawing.Size(207, 20);
+            this.txtbNombreProd.TabIndex = 18;
             // 
             // lblPrecioBase
             // 
@@ -109,22 +109,22 @@
             this.lblProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProducto.Location = new System.Drawing.Point(16, 201);
             this.lblProducto.Name = "lblProducto";
-            this.lblProducto.Size = new System.Drawing.Size(86, 24);
+            this.lblProducto.Size = new System.Drawing.Size(79, 24);
             this.lblProducto.TabIndex = 15;
-            this.lblProducto.Text = "Producto";
+            this.lblProducto.Text = "Nombre";
             // 
-            // lblMarca
+            // lblCategoría
             // 
-            this.lblMarca.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblCategoría.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblMarca.AutoSize = true;
-            this.lblMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.Location = new System.Drawing.Point(16, 151);
-            this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(62, 24);
-            this.lblMarca.TabIndex = 14;
-            this.lblMarca.Text = "Marca";
+            this.lblCategoría.AutoSize = true;
+            this.lblCategoría.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoría.Location = new System.Drawing.Point(16, 151);
+            this.lblCategoría.Name = "lblCategoría";
+            this.lblCategoría.Size = new System.Drawing.Size(90, 24);
+            this.lblCategoría.TabIndex = 14;
+            this.lblCategoría.Text = "Categoría";
             // 
             // lblFechaVencimiento
             // 
@@ -164,14 +164,14 @@
             this.dtpFechaVence.TabIndex = 23;
             this.dtpFechaVence.Value = new System.DateTime(2025, 11, 4, 12, 36, 23, 0);
             // 
-            // txtbMarca
+            // txtbCategoría
             // 
-            this.txtbMarca.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtbCategoría.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtbMarca.Location = new System.Drawing.Point(214, 151);
-            this.txtbMarca.Name = "txtbMarca";
-            this.txtbMarca.Size = new System.Drawing.Size(207, 20);
-            this.txtbMarca.TabIndex = 24;
+            this.txtbCategoría.Location = new System.Drawing.Point(214, 151);
+            this.txtbCategoría.Name = "txtbCategoría";
+            this.txtbCategoría.Size = new System.Drawing.Size(207, 20);
+            this.txtbCategoría.TabIndex = 24;
             // 
             // lblTipoProducto
             // 
@@ -217,15 +217,15 @@
             this.Controls.Add(this.lblObligatorio);
             this.Controls.Add(this.cmbTipoProducto);
             this.Controls.Add(this.lblTipoProducto);
-            this.Controls.Add(this.txtbMarca);
+            this.Controls.Add(this.txtbCategoría);
             this.Controls.Add(this.dtpFechaVence);
             this.Controls.Add(this.lstProductos);
             this.Controls.Add(this.btnAgregarProducto);
             this.Controls.Add(this.txtbPrecioBase);
-            this.Controls.Add(this.txtbProducto);
+            this.Controls.Add(this.txtbNombreProd);
             this.Controls.Add(this.lblPrecioBase);
             this.Controls.Add(this.lblProducto);
-            this.Controls.Add(this.lblMarca);
+            this.Controls.Add(this.lblCategoría);
             this.Controls.Add(this.lblFechaVencimiento);
             this.Controls.Add(this.lblSisContProdSuper);
             this.MinimumSize = new System.Drawing.Size(877, 438);
@@ -242,14 +242,14 @@
         private System.Windows.Forms.ListBox lstProductos;
         private System.Windows.Forms.Button btnAgregarProducto;
         private System.Windows.Forms.TextBox txtbPrecioBase;
-        private System.Windows.Forms.TextBox txtbProducto;
+        private System.Windows.Forms.TextBox txtbNombreProd;
         private System.Windows.Forms.Label lblPrecioBase;
         private System.Windows.Forms.Label lblProducto;
-        private System.Windows.Forms.Label lblMarca;
+        private System.Windows.Forms.Label lblCategoría;
         private System.Windows.Forms.Label lblFechaVencimiento;
         private System.Windows.Forms.Label lblSisContProdSuper;
         private System.Windows.Forms.DateTimePicker dtpFechaVence;
-        private System.Windows.Forms.TextBox txtbMarca;
+        private System.Windows.Forms.TextBox txtbCategoría;
         private System.Windows.Forms.Label lblTipoProducto;
         private System.Windows.Forms.ComboBox cmbTipoProducto;
         private System.Windows.Forms.Label lblObligatorio;
