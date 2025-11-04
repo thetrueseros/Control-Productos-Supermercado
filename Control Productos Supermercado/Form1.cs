@@ -17,5 +17,31 @@ namespace Control_Productos_Supermercado
             InitializeComponent();
         }
 
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            cmbTipoProducto.SelectedIndex = 0;
+        }
+
+        private void cmbTipoProducto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbTipoProducto.SelectedIndex == 1) // Perecedero
+            {
+                lblObligatorio.Visible = true;
+                lblFechaVencimiento.Enabled = true;
+                dtpFechaVence.Enabled = true;
+            }
+            else // No perecedero
+            {
+                lblObligatorio.Visible = false;
+                lblFechaVencimiento.Enabled = false;
+                dtpFechaVence.Enabled = false;
+            }
+        }
+
+        private void btnAgregarProducto_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
